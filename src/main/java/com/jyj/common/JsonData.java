@@ -1,7 +1,10 @@
-package common;
+package com.jyj.common;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Setter
 @Getter
@@ -40,5 +43,12 @@ public class JsonData {
         return jsonData;
     }
 
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<String, Object>();
+        result.put("ret", ret);
+        result.put("msg", msg);
+        result.put("data", data);
+        return result;
+    }
 
 }
