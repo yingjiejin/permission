@@ -17,6 +17,8 @@
     <context:component-scan base-package="com.jyj.controller"/>
     <context:component-scan base-package="com.jyj.service"/>
 
+    <bean class="com.jyj.common.ApplicationContextHelper" lazy-init="false"/>
+
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
 
     <bean class="com.jyj.common.SpringExceptionResolver"/>

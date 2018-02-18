@@ -39,9 +39,9 @@ public class JsonMapper {
             return null;
         }
         try {
-            return (T) (tTypeReference.getType().equals(String.class) ? src : objectMapper.readValue(src, tTypeReference);
+            return (T) (tTypeReference.getType().equals(String.class) ? src : objectMapper.readValue(src, tTypeReference));
         } catch (Exception e) {
-            log.warn("parse string to object exception String:{}, TypeReference<T>:{},error:{}", src, tTypeReference, e);
+            log.warn("parse string to object exception String:{}, TypeReference<T>:{},error:{}", src, tTypeReference.getType(), e);
             return null;
         }
     }
