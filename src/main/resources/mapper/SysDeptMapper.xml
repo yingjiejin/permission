@@ -157,10 +157,11 @@
             where id = #{sysDept.id}
         </foreach>
     </update>
-    <select id="countByNameAndparentId" parameterType="map" resultMap="int">
+    <select id="countByNameAndParentId" parameterType="map" resultMap="int">
         select count(1)
         from sys_dept
-        WHERE  name = #{name}
+        WHERE 1=1
+        AND name = #{name}
         <if test="parentId != null">
             AND parent_id = #{parentId}
         </if>
