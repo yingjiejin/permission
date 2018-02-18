@@ -21,7 +21,7 @@ public class JsonMapper {
         objectMapper.setSerializationInclusion(JsonSerialize.Inclusion.NON_EMPTY);
     }
 
-    public static <T> String json2String(T src) {
+    public static <T> String obj2String(T src) {
         if (src == null) {
             return null;
         }

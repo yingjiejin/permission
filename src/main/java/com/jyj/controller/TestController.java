@@ -33,7 +33,7 @@ public class TestController {
         log.info("validate");
         SysAclModuleMapper moduleMapper = ApplicationContextHelper.popBean(SysAclModuleMapper.class);
         SysAclModule module = moduleMapper.selectByPrimaryKey(1);
-        log.info(JsonMapper.json2String(module));
+        log.info(JsonMapper.obj2String(module));
         BeanValidator.check(vo);
         return JsonData.success("test validate");
     }
