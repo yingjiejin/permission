@@ -4,9 +4,9 @@ import org.apache.commons.lang3.StringUtils;
 
 public class LevelUtil {
 
-    private final static String SEPARATOR = ".";
+    public final static String SEPARATOR = ".";
 
-    private final static String ROOT = "0";
+    public final static String ROOT = "0";
 
     public static String calulateLevel(String parentLevel, int parentId) {
         if (StringUtils.isBlank(parentLevel)) {

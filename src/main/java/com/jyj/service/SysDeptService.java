@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 import java.util.Date;
 
 @Service
-public class DeptService {
+public class SysDeptService {
 
     @Resource
     private SysDeptMapper sysDeptMapper;
