@@ -30,7 +30,6 @@ public class SysDeptController {
         return JsonData.success();
     }
 
-
     @RequestMapping("/tree.json")
     @ResponseBody
     public JsonData tree() {
